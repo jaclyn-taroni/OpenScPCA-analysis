@@ -7,10 +7,10 @@
 
 name: Build docker image for cell-type-wilms-tumor-06
 
-concurrency:
-  # only one run per branch at a time
-  group: "docker_cell-type-wilms-tumor-06_${{ github.ref }}"
-  cancel-in-progress: true
+# concurrency:
+#   # only one run per branch at a time
+#   group: "docker_cell-type-wilms-tumor-06_${{ github.ref }}"
+#   cancel-in-progress: true
 
 on:
   push:
@@ -51,7 +51,7 @@ jobs:
 
   build-push:
     name: Build and Push Docker Image
-    if: (github.event_name == 'push' || inputs.push-ecr)
+    if: github.repository_owner == 'AlexsLemonade' && (github.event_name == 'push' || inputs.push-ecr)
     uses: ./.github/workflows/build-push-docker-module.yml
     with:
       module: "cell-type-wilms-tumor-06"
