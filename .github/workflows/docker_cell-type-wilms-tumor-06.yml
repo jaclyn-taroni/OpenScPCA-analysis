@@ -14,8 +14,8 @@ name: Build docker image for cell-type-wilms-tumor-06
 
 on:
   push:
-    branches:
-      - jaclyn-taroni/bioc-as-base
+    # branches:
+    #   - jaclyn-taroni/bioc-as-base
   # pull_request:
   #   branches:
   #     - main
