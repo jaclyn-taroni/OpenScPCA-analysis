@@ -1,11 +1,12 @@
 # pull base image
-FROM bioconductor/tidyverse:3.19
+FROM bioconductor/bioconductor_docker:3.19
+
+# Adds tidyverse packages & devtools
+RUN /rocker_scripts/install_tidyverse.sh
 
 # Set global R options
 RUN echo "options(repos = 'https://cloud.r-project.org')" > $(R --no-echo --no-save -e "cat(Sys.getenv('R_HOME'))")/etc/Rprofile.site
 ENV RETICULATE_MINICONDA_ENABLED=FALSE
-
-RUN R --no-echo --no-restore --no-save -e "install.packages('remotes')"
 
 RUN R -e "devtools::install_github('enblacar/SCpubr')"
 RUN R -e "remotes::install_github('satijalab/seurat', 'seurat5', quiet = TRUE)"  # this also install patchwork (and others)
