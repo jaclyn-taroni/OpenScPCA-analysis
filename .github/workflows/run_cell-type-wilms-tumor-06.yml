@@ -58,7 +58,7 @@ jobs:
 
       - name: Create Azimuth reference
         run: |
-          Rscript -e ${MODULE_PATH}/scripts/download-and-create-fetal-kidney-ref.R
+          Rscript ${MODULE_PATH}/scripts/download-and-create-fetal-kidney-ref.R
 
       - name: Run analysis module
         run: |
