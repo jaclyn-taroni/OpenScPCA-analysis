@@ -154,7 +154,7 @@ options(future.globals.maxSize= 8912896000000)
 # If running in CI, there will be fewer cells and we must set k.weight in
 # RunAzimuth() to a lower value
 if (running_in_ci) {
-  k_weight <- 25
+  k_weight <- 10
 } else {
   k_weight <- 50  # The default value
 }
