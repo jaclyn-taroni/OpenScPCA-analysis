@@ -28,7 +28,13 @@ running_ci <- opts$testing
 # get list of samples in the library --------------------------------------------
 root_dir <- rprojroot::find_root(rprojroot::is_git_root)
 project_id <- "SCPCP000006"
-sample_metadata_file <- file.path(root_dir, "data", "current", project_id, "single_cell_metadata.tsv")
+sample_metadata_file <- file.path(root_dir, 
+                                  "analyses", 
+                                  "simulate-sce", 
+                                  "results", 
+                                  "simulated", 
+                                  project_id, 
+                                  "single_cell_metadata.tsv")
 metadata <- read.table(sample_metadata_file, sep = "\t", header = TRUE)
 
 # set path to this module--------------------------------------------------------
