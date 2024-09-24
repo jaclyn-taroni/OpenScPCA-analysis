@@ -281,7 +281,7 @@
     },
     "HDF5Array": {
       "Package": "HDF5Array",
-      "Version": "1.32.0",
+      "Version": "1.32.1",
       "Source": "Bioconductor",
       "Repository": "Bioconductor 3.19",
       "Requirements": [
@@ -300,7 +300,7 @@
         "tools",
         "utils"
       ],
-      "Hash": "b10ddb24baf506cf7b4bc868ae65b984"
+      "Hash": "420012f82591a2a20156ef65d4aa210a"
     },
     "IRanges": {
       "Package": "IRanges",
@@ -422,7 +422,7 @@
     },
     "RSpectra": {
       "Package": "RSpectra",
-      "Version": "0.16-1",
+      "Version": "0.16-2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -431,7 +431,7 @@
         "Rcpp",
         "RcppEigen"
       ],
-      "Hash": "6b5ab997fd5ff6d46a5f1d9f8b76961c"
+      "Hash": "5ffd7a70479497271e57cd0cc2465b3b"
     },
     "Rcpp": {
       "Package": "Rcpp",
@@ -458,7 +458,7 @@
     },
     "RcppEigen": {
       "Package": "RcppEigen",
-      "Version": "0.3.4.0.0",
+      "Version": "0.3.4.0.2",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -467,7 +467,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "df49e3306f232ec28f1604e36a202847"
+      "Hash": "4ac8e423216b8b70cb9653d1b3f71eb9"
     },
     "RcppHNSW": {
       "Package": "RcppHNSW",
@@ -1009,7 +1009,7 @@
     },
     "edgeR": {
       "Package": "edgeR",
-      "Version": "4.2.0",
+      "Version": "4.2.1",
       "Source": "Bioconductor",
       "Repository": "Bioconductor 3.19",
       "Requirements": [
@@ -1022,7 +1022,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "20783ecb7e7cea3f351e8b21153e3eb8"
+      "Hash": "729daec53b663926458ccde421f5c2fb"
     },
     "evaluate": {
       "Package": "evaluate",
@@ -1881,13 +1881,13 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "1.0.7",
+      "Version": "1.0.9",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Requirements": [
         "utils"
       ],
-      "Hash": "397b7b2a265bc5a7a06852524dabae20"
+      "Hash": "ef233f0e9064fc88c898b340c9add5c2"
     },
     "reshape2": {
       "Package": "reshape2",
@@ -2081,7 +2081,6 @@
       "RemoteRepo": "scpcaTools",
       "RemoteRef": "v0.3.2",
       "RemoteSha": "20c90296f37e3a830aacfe79d1af2bd34240c0c0",
-      "Remotes": "AlexsLemonade/scpcaData, immunogenomics/lisi@v1.0",
       "Requirements": [
         "BiocGenerics",
         "DropletUtils",
