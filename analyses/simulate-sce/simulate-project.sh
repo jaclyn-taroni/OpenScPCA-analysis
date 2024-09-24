@@ -33,7 +33,8 @@ for dir in $data_dir/$project/*/; do
     Rscript scripts/simulate-sce.R \
       --sample_dir $dir \
       --metadata_file $output_dir/$project/single_cell_metadata.tsv \
-      --output_dir $output_dir/$project/$sample
+      --output_dir $output_dir/$project/$sample \
+      --ncells 500
 done
 
 echo "Creating AnnData files"
